@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="To: Feitot"><meta property="og:description" content="I'm deeply sorry.">
+    <title>Random:></title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f1115;
+            --card-bg: rgba(30, 33, 39, 0.8);
+            --accent: #c5a367; 
+            --text-main: #e0e0e0;
+            --text-dim: #a0a0a0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: radial-gradient(circle at center, #1e2127 0%, #0f1115 100%);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            background: var(--card-bg);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            padding: 50px 40px;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+            max-width: 550px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 30px;
+            font-weight: 400;
+            letter-spacing: 1px;
+        }
+
+        .divider {
+            height: 1px;
+            width: 60px;
+            background: var(--accent);
+            margin: 0 auto 30px;
+            opacity: 0.5;
+        }
+
+        p {
+            line-height: 1.8;
+            margin-bottom: 25px;
+            font-size: 1.05rem;
+            color: var(--text-main);
+            font-weight: 300;
+        }
+
+        .emphasis {
+            font-style: italic;
+            color: var(--accent);
+        }
+
+        .form-group {
+            text-align: left;
+            margin-top: 40px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 12px;
+            font-size: 0.9rem;
+            color: var(--text-dim);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 140px;
+            padding: 18px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            color: white;
+            font-family: inherit;
+            font-size: 1rem;
+            resize: none;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: var(--accent);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        button {
+            background-color: transparent;
+            color: var(--accent);
+            border: 1px solid var(--accent);
+            padding: 14px 40px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 0.95rem;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: var(--accent);
+            color: #0f1115;
+            box-shadow: 0 0 20px rgba(197, 163, 103, 0.3);
+        }
+
+        .footer-note {
+            font-size: 0.75rem;
+            color: var(--text-dim);
+            margin-top: 25px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>I'm Sorry</h1>
+    <div class="divider"></div>
+    
+    <p>
+        I’ve spent time reflecting on everything. I want to sincerely apologize for my recent actions and the unnecessary inconveniences I’ve put you through. I’ve spent a lot of time sitting with my thoughts lately, and I realize how much my recent actions have weighed on you. I am deeply sorry for the way I’ve behaved and for the unnecessary stress and inconvenience I brought into you. You’ve always been a source of peace for me, and it hurts to know that I was the one who ruined yours. I didn't respect your feelings despite knowing that don't encounter that treatment even in your home. And because of that, I am truly sorry.
+    </p>
+    
+    <p>
+        Most of all, I regret <span class="emphasis">not being gentle with you</span> last time. t Iwasn't fair to you, and I truly apologize for how I handled things. You deserved patience and kindness, but instead, I let my own frustrations get the better of me. It wasn't fair to you, and it’s not the person I want to be when I’m with you. I value our connection more than I can put into words, and I hope you can find it in your heart to forgive me. I’m here whenever you’re ready to talk, and I promise to listen with the care you’ve always deserved. I should have handled it with  care. T_T
+    </p>
+
+    <div class="form-group">
+        <form action="https://formspree.io/f/xeelgpqq" method="POST">
+            <label for="response">If you have anything to say, I'm here to listen</label>
+            <textarea name="message" id="response" placeholder="Your thoughts..."></textarea>
+            <button type="submit">Send Response</button>
+        </form>
+        <p class="footer-note">This message will be sent privately to me.</p>
+    </div>
+</div>
+
+<style>
+    .floating-sorry {
+        position: fixed;
+        pointer-events: none; /* So it doesn't interfere with clicking */
+        color: rgba(197, 163, 103, 0.7); /* Matching your gold accent */
+        font-family: 'Playfair Display', serif;
+        font-style: italic;
+        font-size: 14px;
+        white-space: nowrap;
+        animation: floatUp 2s ease-out forwards;
+        z-index: 9999;
+    }
+
+    @keyframes floatUp {
+        0% {
+            opacity: 0;
+            transform: translateY(0) scale(0.8);
+        }
+        20% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(-50px) scale(1.1);
+        }
+    }
+</style>
+
+<script>
+    const phrases = ["I'm sorry", "Forgive me", "I'm listening", "Truly sorry"];
+    let lastTime = 0;
+
+    function createFloatingText(x, y) {
+        // Limit how often phrases appear so it's not too crowded
+        const now = Date.now();
+        if (now - lastTime < 100) return; 
+        lastTime = now;
+
+        const span = document.createElement('span');
+        span.className = 'floating-sorry';
+        
+        // Pick a random phrase
+        span.innerText = phrases[Math.floor(Math.random() * phrases.length)];
+        
+        // Position it at the mouse/touch point
+        span.style.left = x + 'px';
+        span.style.top = y + 'px';
+
+        document.body.appendChild(span);
+
+        // Remove element after animation finishes
+        setTimeout(() => {
+            span.remove();
+        }, 2000);
+    }
+
+    // Mouse Move for Desktop
+    window.addEventListener('mousemove', (e) => {
+        createFloatingText(e.clientX, e.clientY);
+    });
+
+    // Touch Move for Mobile
+    window.addEventListener('touchmove', (e) => {
+        const touch = e.touches[0];
+        createFloatingText(touch.clientX, touch.clientY);
+    });
+</script>
+
+</body>
+</html>
